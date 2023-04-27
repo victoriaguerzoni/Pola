@@ -1,12 +1,12 @@
 import React from 'react'
-import ItemListContainer from './components/ItemListContainer'
-import NavBar from './components/NavBar'
+import ItemListContainer from './Components/ItemListContainer'
+import NavBar from './Components/NavBar'
 
 const App = () => {
   return (
     <>
       <NavBar/>
-      <ItemListContainer greeting={"Bienvenidos a mi libreria online"}/>
+      <ItemListContainer greeting={"Bienvenidos a mi tienda online"}/>
     </>
   )
 }
