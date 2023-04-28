@@ -6,9 +6,9 @@ const App = () => {
   return (
     <>
       <NavBar/>
-      <ItemListContainer greeting={"Bienvenidos a mi tienda online"}/>
+      <ItemListContainer greeting="Bienvenidos a mi tienda online" />
     </>
   )
 }
-
+ 
 export default App
