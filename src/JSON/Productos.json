@@ -1,0 +1,13 @@
+[
+
+    {
+        "id":1,
+        "category": "cosmetica natural",
+        "subcategory": "cuidado facial",
+        "title":"locion hidratante y descongestiva",
+        "price":1800,
+        "description":"lkslñklkñlk",
+        "pictureURL":"https://www.google.com/url?sa=i&url=https%3A%2F%2Foliviarosecosmeticanaturales.com%2Fproductos%2Flocion-hidratante-y-descongestiva%2F&psig=AOvVaw2VgxAFUtiDrjKcXiV-hbwt&ust=1683824548846000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKDXnLOd6_4CFQAAAAAdAAAAABAE",
+        "stock":0
+    }
+]
