@@ -1,6 +1,6 @@
 import React from 'react';
 import Item from './Item';
-import {items} from '../JS/Productos'
+import {items} from '../asyncmock/Productos'
 
 const ItemList = () => {
 
@@ -15,7 +15,8 @@ const ItemList = () => {
         id={item.id}
         description={item.description}
         price={item.price}
-        stock={item.stock}/>
+        stock={item.stock}
+        pictureURL={item.pictureURL}/>
       ))}
     </div>
   )

@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ItemList from './ItemList'
 
 const ItemListContainer = ({greeting}) => {
-
+ 
   const getItem=({items})=>{
     return new Promise((resolve, reject)=>{
       if(items.length===0){

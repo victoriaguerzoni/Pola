@@ -1,3 +1,4 @@
+import locionHidratante from '../img/locionhidratante.jpeg'
 export const items=[
 
     {
@@ -7,7 +8,7 @@ export const items=[
         "title":"locion hidratante y descongestiva",
         "price":1800,
         "description":"lkslñklkñlk",
-        "pictureURL":"./img/locionhidratante.jpeg",
+        "pictureURL":locionHidratante,
         "stock":0
     },
  
@@ -17,7 +18,7 @@ export const items=[
       "title":"locion hidratante y descongestiva",
       "price":1200,
       "description":"KiC9_L39P4CFQAAAAAdAAAAABAE",
-      "pictureURL":"https://www.google.com/url?sa=i&url=https%3A%2F%2Foliviarosecosmeticanaturales.com%2Fproductos%2Flocion-hidratante-y-descongestiva%2F&psig=AOvVaw255Lb0yzcHCKDX-rl2JuyO&ust=1684158079346000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKiC9_L39P4CFQAAAAAdAAAAABAE",
+      "pictureURL":locionHidratante,
       "stock":0
       },
       {
@@ -27,7 +28,7 @@ export const items=[
         "title":"locion hidratante y descongestiva",
         "price":1100,
         "description":"lkslñklkñlk",
-        "pictureURL":"",
+        "pictureURL":locionHidratante,
         "stock":6
       },
       {
@@ -37,8 +38,15 @@ export const items=[
         "title":"locion hidratante y descongestiva",
         "price":1500,
         "description":"lkslñklkñlk",
-        "pictureURL":"",
+        "pictureURL":locionHidratante,
         "stock":10
       }
   
 ]
+export const getProducts=()=>{
+  return new Promise((resolve)=>{
+    setTimeout(()=>{
+      resolve(items)
+    },2000)
+  })
+}
