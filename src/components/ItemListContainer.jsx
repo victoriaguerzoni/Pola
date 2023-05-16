@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react'
 import ItemList from './ItemList'
 
 const ItemListContainer = ({greeting}) => {
