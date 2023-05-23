@@ -43,3 +43,11 @@ export const items=[
       }
   
 ]
+
+export const getProducts=()=>{
+  return new Promise((resolve)=>{
+   setTimeout(()=>{
+      resolve(items)
+  },2000)
+ })
+}
