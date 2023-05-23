@@ -6,7 +6,7 @@ const Item = ({id,pictureURL,title,price}) => {
    
   return (
     <div key={id}>
-        <div xs={2} md={4} lg={6} className="card justify-content-md-center" style={{ width: '16rem' }}>
+        <div style={{display:'flex', justifyContent:'center'}} className="card justify-content-md-center" style={{ width: '16rem' }}>
             <img src={pictureURL} className="card-img-top" alt="..."/>
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>

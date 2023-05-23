@@ -44,10 +44,12 @@ export const items=[
   
 ]
 
-export const getProducts=()=>{
-  return new Promise((resolve)=>{
-   setTimeout(()=>{
-      resolve(items)
-  },2000)
- })
+const getProductById = (id) => {
+  return new Promise ((resolve)=> {
+      setTimeout (()=> {
+          resolve (items.find(prod => prod.id===id))
+      },500)
+  })
+
 }
+export default getProductById
