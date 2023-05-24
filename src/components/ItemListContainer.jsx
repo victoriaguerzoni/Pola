@@ -1,8 +1,9 @@
 import ItemList from './ItemList'
+import { items } from '../asyncmock/Productos';
 
 const ItemListContainer = ({greeting}) => {
  
-  const getItem=({items})=>{
+  const getItem=()=>{
     return new Promise((resolve, reject)=>{
       if(items.length===0){
         reject (new Error ("no hay productos para mostrar"));

@@ -1,24 +1,17 @@
 import React, { useState } from 'react';
 
-const ItemCount = ({stock}) => {
-    const [counter, setCounter]=useState (1);
-    const [stockCounter,setStockCounter]=useState(stock)
+const ItemCount = ({stock,inicial}) => {
+  const [counter, setCounter]=useState (1);
+  const [stockCounter,setStockCounter]=useState(stock)
 
-    const sumarProducto=()=>{
-        if (counter<stock){
-          setCounter(counter + 1);}
-          console.log("ha sumado "+counter+" nuevos productos")
-    
-    };
-    const restarProducto=()=>{
-        if (counter>stock){
-      setCounter(counter>1);}
-      console.log("no puede remover mas productos")
-    };
-    const onAdd=()=>{
-        if(stockCounter>=counter){
-        setStockCounter(stockCounter-counter);}
-        console.log("agregastes "+counter+" producto al carrito, quedan "+stockCounter+"disponible")
+  const sumarProducto=()=>counter<stock && setCounter(counter+1)
+     
+  const restarProducto=()=>counter>inicial && setCounter(counter-1)
+
+  const onAdd=()=>{
+    if(stockCounter>=counter){
+    setStockCounter(stockCounter-counter);}
+    console.log("agregastes "+counter+" producto al carrito, quedan "+stockCounter+"disponible")
         
     }
   return (
