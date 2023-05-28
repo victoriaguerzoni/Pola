@@ -7,20 +7,20 @@ import {getProductById} from '../asyncmock/Productos'
 const ItemDetailContainer = () => {
 
   const [product, setProduct] = useState((null))
-  const id = useParams ().id;
+  const {itemid} = useParams();
 
   useEffect (()=>{
-      getProductById('12')
+      getProductById(itemid)
       .then(response=>{
           setProduct(response)
       })
       .catch (error=> {
           console.log(error)
       })
-  },[id])
+  },[itemid])
 
   return (
-    <div style={{display:'flex', justifyContent:'center'}}>
+    <div>
         <ItemDetail {...product}/>
     </div>
   )

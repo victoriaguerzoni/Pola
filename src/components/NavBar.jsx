@@ -20,9 +20,9 @@ const NavBar = () => {
                   Categorias
                 </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><Link className="dropdown-item" to={'/item/:id'}>Cuidado facial</Link></li>
-                  <li><Link className="dropdown-item" to={'/item/:id'}>Maquillaje</Link></li> 
-                  <li><Link className="dropdown-item" to={'/item/:id'}>Cuidado capilar</Link></li>
+                  <li><Link className="dropdown-item" to={'/category/:id'}>Cuidado facial</Link></li>
+                  <li><Link className="dropdown-item" to={'/category/:id'}>Maquillaje</Link></li> 
+                  <li><Link className="dropdown-item" to={'/category/:id'}>Cuidado capilar</Link></li>
                 </ul>
               </li>
               <li className="nav-item">
