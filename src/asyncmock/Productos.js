@@ -74,7 +74,7 @@ export const items=[
 ]
 export const getProductByCatedory = (categoryid)=>{
   return new Promise ((resolve)=>{
-    resolve (items.find(prod=>prod.category===categoryid))
+    resolve (items.filter(prod=>prod.category===categoryid))
   })
 }
 export const getProductById = (productid) => {

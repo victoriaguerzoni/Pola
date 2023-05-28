@@ -5,11 +5,11 @@ import { useEffect, useState } from 'react';
 
 const ItemListContainer = ({greeting}) => {
   const [prods,setProds]= useState();
-  const {categoryId}=useParams()
+  const {categoryid}=useParams()
 
   useEffect(()=>{
-    const asyncFunc = categoryId? getProductByCatedory : getProductById
-    asyncFunc(categoryId)
+    const asyncFunc = categoryid? getProductByCatedory : getProductById
+    asyncFunc(categoryid)
     .then(response=>{
       setProds(response)
     })
