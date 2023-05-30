@@ -1,11 +1,11 @@
 import React from 'react';
 import Item from './Item';
-//import {items} from '../asyncmock/Productos'
+
 
 const ItemList = ({items}) => {
 
   return (
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div className="containerCard card-group aline-items-center">
       {items.map((item, id) =>(
         <Item 
         key={id}

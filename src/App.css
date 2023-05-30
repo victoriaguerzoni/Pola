@@ -1,7 +1,12 @@
 *{margin:auto; padding: 0;}
-
+.alinearCards{
+    width: 18rem;
+}
 .ImgCardRender{
-    width: 50%;
-    height: 50%;
-
+    width: 150px;
+    height: 150px;
+}
+.containerCard{
+    display: flex;
+    flex-wrap: wrap;
 }

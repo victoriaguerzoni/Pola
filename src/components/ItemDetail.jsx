@@ -5,7 +5,7 @@ import ItemCount from './ItemCount';
 const ItemDetail = ({id,pictureURL,title,description,price,stock}) => {
   return (
     <>
-          <div key={id} className="card mb-2" style={{display:'flex', width: '8 rem'  }}>
+          <div key={id} className="card mb-2">
             <div className="row g-0">
                 <div className="col-md-4">
                     <img src={pictureURL} className="card-img-top" alt="..."/>

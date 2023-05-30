@@ -43,7 +43,7 @@ const ItemListContainer = ({greeting}) => {
 
   return (
     <section>
-        <span>{greeting}</span>
+        <h1 className="text-center m-2">{greeting}</h1>
         <ItemList items={prods} />
         
     </section>

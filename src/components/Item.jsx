@@ -7,7 +7,7 @@ const Item = ({id,pictureURL,title,price}) => {
    
   return (
     <div key={id}>
-        <div className="card" style={{width: "18 rem"}}>
+        <div className="card alinearCards mt-3">
             <img src={pictureURL} className="card-img-top ImgCardRender" alt="..."/>
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
