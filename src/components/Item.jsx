@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Item = ({id,pictureURL,title,price}) => {
    
   return (
-    <div key={id}>
+    <div key={id} className='row'>
         <div className="card col-sm-2 mt-5" style={{width: '18 rem'}}>
             <img src={pictureURL} className="card-img-top" alt="..."/>
             <div className="card-body">

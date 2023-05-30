@@ -16,13 +16,13 @@ const NavBar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
   
               <li className="nav-item dropdown">
-                <NavLink to={'/category/categoryid'}className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <NavLink to={'/category/categoryId'}className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Categorias
                 </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><Link className="dropdown-item" to={'/category/categoryid'}>Cuidado facial</Link></li>
-                  <li><Link className="dropdown-item" to={'/category/categoryid'}>Maquillaje</Link></li> 
-                  <li><Link className="dropdown-item" to={'/category/categoryid'}>Cuidado capilar</Link></li>
+                  <li><Link className="dropdown-item" to={'/category/Cuidado_facial'}>Cuidado facial</Link></li>
+                  <li><Link className="dropdown-item" to={'/category/Maquillaje'}>Maquillaje</Link></li> 
+                  <li><Link className="dropdown-item" to={'/category/Cuidado_capilar'}>Cuidado capilar</Link></li>
                 </ul>
               </li>
               <li className="nav-item">

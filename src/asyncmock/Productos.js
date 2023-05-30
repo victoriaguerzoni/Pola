@@ -9,7 +9,7 @@ export const items=[
 
     {
         "id":12,
-        "category":"Cuidado facial",
+        "category":"Cuidado_facial",
         "title":"locion hidratante y descongestiva",
         "price":1800,
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
@@ -18,7 +18,7 @@ export const items=[
     },
     {
       "id":18,
-      "category":"Cuidado facial",
+      "category":"Cuidado_facial",
       "title":"Agua Micelar",
       "price":1800,
       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
@@ -27,7 +27,7 @@ export const items=[
   },
  
     {"id":19,
-      "category":"Cuidado facial",
+      "category":"Cuidado_facial",
       "title":"Emulsión de limpieza",
       "price":1200,
       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
@@ -36,7 +36,7 @@ export const items=[
       },
       {
         "id":13,
-        "category":"Cuidado facial",
+        "category":"Cuidado_facial",
         "title":"Serum contorno de ojos",
         "price":1100,
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
@@ -63,20 +63,16 @@ export const items=[
       },
       {
         "id":32,
-        "category":"Cuidado capilar",
+        "category":"Cuidado_capilar",
         "title":"Shampoo sólido",
         "price":500,
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
         "pictureURL":shampooSolido,
-        "stock":10
+        "stock":0
       },
   
 ]
-export const getProductByCatedory = (categoryid)=>{
-  return new Promise ((resolve)=>{
-    resolve (items.filter(prod=>prod.category===categoryid))
-  })
-}
+
 export const getProductById = (productid) => {
   return new Promise ((resolve)=> {
       setTimeout (()=> {

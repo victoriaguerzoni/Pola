@@ -11,8 +11,7 @@ const ItemCount = ({stock,inicial}) => {
   const onAdd=()=>{
     if(stockCounter>=counter){
     setStockCounter(stockCounter-counter);}
-    console.log("agregastes "+counter+" producto al carrito, quedan "+stockCounter+"disponible")
-        
+    console.log("agregastes "+counter+" producto al carrito")    
     }
   return (
     <div className="container">

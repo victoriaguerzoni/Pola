@@ -1,8 +1,8 @@
 import React from 'react';
 import Item from './Item';
-import {items} from '../asyncmock/Productos'
+//import {items} from '../asyncmock/Productos'
 
-const ItemList = () => {
+const ItemList = ({items}) => {
 
   return (
     <div className='display:flex, flexWrap:wrap'>
