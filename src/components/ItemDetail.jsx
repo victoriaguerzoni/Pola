@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import ItemCount from './ItemCount';
-import Item from './Item';
 import { CartContext } from '../context/CartContext';
+import { Link } from 'react-router-dom';
 
 
 const ItemDetail = ({item}) => {
@@ -15,7 +15,8 @@ const ItemDetail = ({item}) => {
   
   useEffect(()=>{
     setQuantifyAdded(item.stock)
-  })
+  },[item.stock])
+
   return (
     <>
           <div key={item.id} className="card mb-2">
@@ -29,7 +30,9 @@ const ItemDetail = ({item}) => {
                     <p className="card-text">{item.description}</p>
                     <h3 className="card-text">$ {item.price}</h3>
                     <p className="card-text"><small className="text-muted">stock: {item.stock}</small></p>
-                    {quantifyAdded>0?(<link to='/cart'>finalizar compra</link>):(<ItemCount inicial={1}stock={5} onAdd={onAdd}/>)}
+                    
+                    <ItemCount inicial={1}stock={item.stock} onAdd={onAdd}/>
+                    <button className='btn btn-success'>{quantifyAdded>0}<Link to='/cart'>finalizar compra</Link></button>
                   </div>
                 </div>
             </div>

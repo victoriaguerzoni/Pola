@@ -6,7 +6,7 @@ import { db } from '../services/firebase/firebaseconfig'
 
 const ItemDetailContainer = () => {
 
-  const [product, setProduct] = useState((null))
+  const [product, setProduct] = useState({})
   const {itemid} = useParams();
 
   useEffect (()=>{
@@ -22,7 +22,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
-        <ItemDetail {...product}/>
+        <ItemDetail item={product}/>
     </div>
   )
 }
