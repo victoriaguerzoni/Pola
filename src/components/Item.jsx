@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-
 const Item = ({id,pictureURL,title,price}) => {
    
   return (

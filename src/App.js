@@ -1,13 +1,15 @@
 import React from 'react'
-import './app.css'
-import ItemListContainer from './Components/ItemListContainer'
-import ItemDetailContainer from './Components/ItemDetailContainer'
-import NavBar from './Components/NavBar'
+import './App.css'
+import ItemListContainer from './components/ItemListContainer'
+import ItemDetailContainer from './components/ItemDetailContainer'
+import NavBar from './components/NavBar'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+
 
 const App = () => {
   return (
     <BrowserRouter>
+    <cartProvider>
       <NavBar/>
         <Routes>
         <Route path='/' element={<ItemListContainer greeting="Bienvenidos a mi tienda online"/>}></Route>
@@ -15,6 +17,7 @@ const App = () => {
         <Route path='/item/:itemid'element={<ItemDetailContainer/>}></Route>
         
       </Routes>
+    </cartProvider>
     </BrowserRouter>
   )
 }
