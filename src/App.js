@@ -7,8 +7,6 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import CartContextProvider from './context/CartContext'
 import Cart from './components/Cart'
 
-
-
 const App = () => {
   return (
     <BrowserRouter>
@@ -16,7 +14,7 @@ const App = () => {
       <NavBar/>
       <Routes>
         <Route path='/' element={<ItemListContainer greeting="Bienvenidos a mi tienda online"/>}></Route>
-        <Route path='/category/:categoryId'element={<ItemListContainer/>}></Route>
+        <Route path='/categoryId/:categoryId'element={<ItemListContainer/>}></Route>
         <Route path='/item/:itemid'element={<ItemDetailContainer/>}></Route>
         <Route path='/cart' element={<Cart/>}></Route>
       </Routes>
@@ -24,5 +22,4 @@ const App = () => {
     </BrowserRouter>
   )
 }
- 
 export default App
