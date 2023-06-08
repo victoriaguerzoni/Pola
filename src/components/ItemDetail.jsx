@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import ItemCount from './ItemCount';
-import {CartContext}  from '../context/CartContext';
+import {CartContext} from '../context/CartContext';
 import { Link } from 'react-router-dom';
 
 
@@ -32,7 +32,7 @@ const ItemDetail = ({item}) => {
                     <p className="card-text"><small className="text-muted">stock: {item.stock}</small></p>
                     
                     <ItemCount inicial={1}stock={item.stock} onAdd={onAdd}/>
-                    <button className='btn btn-success'>{quantifyAdded>0}<Link to='/cart'>finalizar compra</Link></button>
+                    <button className='btn btn-success'>{quantifyAdded>0}<Link to='/cart'>Ir al Carrito</Link></button>
                   </div>
                 </div>
             </div>
