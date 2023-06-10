@@ -11,7 +11,7 @@ const Item = ({id,pictureURL,title,price}) => {
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
                 <p className="card-text">${price}</p>
-                <Link to={`/item/${id}`} className="btn btn-primary">Ver detalle</Link>
+                <Link to={`/item/${id}`} className="btn btn-primary"style={{display:"flex",justifyContent:"center"}}>Ver detalle</Link>
             </div>
         </div>
     </div>

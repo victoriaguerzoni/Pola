@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
     const {cart, cartTotal,priceTotal, removeItem, clear}= useContext(CartContext)
@@ -31,7 +32,7 @@ const Cart = () => {
                     <td>{cartTotal()}</td>
                     <td>${priceTotal()}</td>
                     <td><button className='btn btn-warning' onClick={()=>{clear()}}>🗑️</button></td>
-                    <td><button className='btn btn-success'>finalizar compra</button></td>
+                    <td><button className='btn btn-success'><Link to='/checkout'>finalizar compra</Link></button></td>
                 </tr>
             </tbody>
         </table>
