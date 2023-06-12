@@ -14,7 +14,17 @@ const Checkout = () => {
   console.log(orderId)
 
   return (
-    <div><CheckoutForm onSend={venta}/></div>
+    <div>
+      {!orderId?
+      <div>
+      <CheckoutForm onSend={venta}/>
+      </div>:
+      <div>
+        <h3 className='text-center'>felicitaciones por su compra!!</h3>
+        <h1 className='text-center'>numero de pedido:{orderId}</h1>
+      </div>}
+      
+    </div>
   )
 }
 

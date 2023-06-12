@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 const CheckoutForm = ({onSend}) => {
-        
+
+   
     const [fields, setFields]=useState({
         name:"",
         lastName:"",
@@ -13,18 +14,13 @@ const CheckoutForm = ({onSend}) => {
   const handleSubmit=(e)=>{
     e.preventDefault()
     onSend(fields);
-    console.log ("su orden se esta procesando", fields)    
+    console.log ("su orden se esta procesando", fields)
+       
   }
   
-  useEffect(()=>{
-    if (fields && fields.success){
-        document.getElementById("vaciarform").reset();
-    }
-  })
- 
-
-  return (
-    <>          
+  
+  return (   
+    <>             
         <div style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
         <h1>Datos del Comprador</h1>
             <form onSubmit={handleSubmit} id='vaciarform'className="row p-4 text-center needs-validation" >
@@ -61,6 +57,7 @@ const CheckoutForm = ({onSend}) => {
                 </div>
             </form>
         </div>
+
     </>    
   )
 }
