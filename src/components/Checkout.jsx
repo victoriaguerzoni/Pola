@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import CheckoutForm from './CheckoutForm'
 import { ventasData } from '../services/firebase/ventasData'
 
+
 const Checkout = () => {
   
   const [orderId,setOrder]=useState("")
@@ -12,10 +13,11 @@ const Checkout = () => {
     
   }
   console.log(orderId)
+  
 
   return (
     <div>
-      {!orderId?
+      {!orderId ?
       <div>
       <CheckoutForm onSend={venta}/>
       </div>:

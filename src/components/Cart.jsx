@@ -4,6 +4,19 @@ import { Link } from 'react-router-dom'
 
 const Cart = () => {
     const {cart, cartTotal,priceTotal, removeItem, clear}= useContext(CartContext)
+    if (cartTotal() === 0) {
+        return (
+            <div className='container'>
+                <div className='row my-5'>
+                    <div className='col-md-12 text-center'>
+                        <div className="alert alert-danger" role="alert">No se encontraron productos!!!
+                        </div>
+                        <Link to={"/"} className="btn btn-outline-dark">Volver a pagina principal</Link>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 
   return (
     <div className='table-responsive'>

@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { CartContext } from '../context/CartContext'
+
 
 const CheckoutForm = ({onSend}) => {
+    const {clear}=useContext(CartContext)
+    
 
-   
     const [fields, setFields]=useState({
         name:"",
         lastName:"",
@@ -19,7 +22,7 @@ const CheckoutForm = ({onSend}) => {
   }
   
   
-  return (   
+  return ( 
     <>             
         <div style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
         <h1>Datos del Comprador</h1>
@@ -53,7 +56,7 @@ const CheckoutForm = ({onSend}) => {
                     </div>
                 </div>
                 <div>
-                    <button className="btn btn-primary" type="submit">Enviar pedido</button>
+                    <button className="btn btn-primary" type="submit" onClick={clear}>Enviar pedido</button>
                 </div>
             </form>
         </div>

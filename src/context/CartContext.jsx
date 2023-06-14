@@ -21,10 +21,12 @@ const CartContextProvider = ({children}) => {
     const removeItem = (id) => {
         const products = cart.filter(pr => pr.id !== id)
         setCart([...products])
+        console.log ("eliminando...")
     }
 
     const clear = () => {
         setCart([])
+        console.log ("limpiando")
     }
 
     const cartTotal = () => {
